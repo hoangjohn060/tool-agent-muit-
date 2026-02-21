@@ -1,0 +1,110 @@
+## [​](https://docs.openclaw.ai/cli/agents#examples)Examples
+[​](https://docs.openclaw.ai/cli/agents#examples)
+
+```
+openclaw agents list openclaw agents add work --workspace ~/.openclaw/workspace-work openclaw agents set-identity --workspace ~/.openclaw/workspace --from-identity openclaw agents set-identity --agent main --avatar avatars/openclaw.png openclaw agents delete work
+```
+
+
+```
+openclaw agents list openclaw agents add work --workspace ~/.openclaw/workspace-work openclaw agents set-identity --workspace ~/.openclaw/workspace --from-identity openclaw agents set-identity --agent main --avatar avatars/openclaw.png openclaw agents delete work
+```
+
+## [​](https://docs.openclaw.ai/cli/agents#identity-files)Identity files
+[​](https://docs.openclaw.ai/cli/agents#identity-files)
+
+```
+IDENTITY.md
+```
+
+- Example path: ~/.openclaw/workspace/IDENTITY.md
+- set-identity --from-identity reads from the workspace root (or an explicit --identity-file)
+
+```
+~/.openclaw/workspace/IDENTITY.md
+```
+
+
+```
+set-identity --from-identity
+```
+
+
+```
+--identity-file
+```
+
+## [​](https://docs.openclaw.ai/cli/agents#set-identity)Set identity
+[​](https://docs.openclaw.ai/cli/agents#set-identity)
+
+```
+set-identity
+```
+
+
+```
+agents.list[].identity
+```
+
+- name
+- theme
+- emoji
+- avatar (workspace-relative path, http(s) URL, or data URI)
+
+```
+name
+```
+
+
+```
+theme
+```
+
+
+```
+emoji
+```
+
+
+```
+avatar
+```
+
+
+```
+IDENTITY.md
+```
+
+
+```
+openclaw agents set-identity --workspace ~/.openclaw/workspace --from-identity
+```
+
+
+```
+openclaw agents set-identity --workspace ~/.openclaw/workspace --from-identity
+```
+
+
+```
+openclaw agents set-identity --agent main --name "OpenClaw" --emoji "🦞" --avatar avatars/openclaw.png
+```
+
+
+```
+openclaw agents set-identity --agent main --name "OpenClaw" --emoji "🦞" --avatar avatars/openclaw.png
+```
+
+
+```
+{ agents: { list: [ { id: "main", identity: { name: "OpenClaw", theme: "space lobster", emoji: "🦞", avatar: "avatars/openclaw.png", }, }, ], }, }
+```
+
+
+```
+{ agents: { list: [ { id: "main", identity: { name: "OpenClaw", theme: "space lobster", emoji: "🦞", avatar: "avatars/openclaw.png", }, }, ], }, }
+```
+
+[agent](https://docs.openclaw.ai/cli/agent)
+[approvals](https://docs.openclaw.ai/cli/approvals)
+[Powered by](https://www.mintlify.com?utm_campaign=poweredBy&utm_medium=referral&utm_source=clawdhub)
